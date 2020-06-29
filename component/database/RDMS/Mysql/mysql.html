@@ -1,0 +1,4096 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Mysql · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../GaussDB/gaussdb.html" />
+    
+    
+    <link rel="prev" href="../DB2/db2.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Summary</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../../">
+            
+                <a href="../../../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">介绍</li>
+        
+        
+    
+
+    
+        
+        <li class="header">环境</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" >
+            
+                <span>
+            
+                    
+                    容器
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../../../../environment/virtual/container/docker/docker.html">
+            
+                <a href="../../../../environment/virtual/container/docker/docker.html">
+            
+                    
+                    Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../../../../environment/virtual/container/rocket/rocket.html">
+            
+                <a href="../../../../environment/virtual/container/rocket/rocket.html">
+            
+                    
+                    Rocket
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" >
+            
+                <span>
+            
+                    
+                    镜像仓库
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="../../../../environment/virtual/containerRegistry/dockerRegistry/dockerRegistry.html">
+            
+                <a href="../../../../environment/virtual/containerRegistry/dockerRegistry/dockerRegistry.html">
+            
+                    
+                    Docker Registry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="../../../../environment/virtual/containerRegistry/vmwareHub/hub.html">
+            
+                <a href="../../../../environment/virtual/containerRegistry/vmwareHub/hub.html">
+            
+                    
+                    Vmware Hub
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" >
+            
+                <span>
+            
+                    
+                    容器管理平台
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.1" data-path="../../../../environment/virtual/containerManager/kubernetes/kubernetes.html">
+            
+                <a href="../../../../environment/virtual/containerManager/kubernetes/kubernetes.html">
+            
+                    
+                    Kubernetes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2" data-path="../../../../environment/virtual/containerManager/swarm/swarm.html">
+            
+                <a href="../../../../environment/virtual/containerManager/swarm/swarm.html">
+            
+                    
+                    Docker Swarm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.3" data-path="../../../../environment/virtual/containerManager/rancher/rancher.html">
+            
+                <a href="../../../../environment/virtual/containerManager/rancher/rancher.html">
+            
+                    
+                    Rancher
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" >
+            
+                <span>
+            
+                    
+                    容器网络接口(CNI)
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.4.1" data-path="../../../../environment/virtual/cni/flannel/flannel.html">
+            
+                <a href="../../../../environment/virtual/cni/flannel/flannel.html">
+            
+                    
+                    Flannel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.2" data-path="../../../../environment/virtual/cni/calico/calico.html">
+            
+                <a href="../../../../environment/virtual/cni/calico/calico.html">
+            
+                    
+                    Calico
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.3" data-path="../../../../environment/virtual/cni/weave/weave.html">
+            
+                <a href="../../../../environment/virtual/cni/weave/weave.html">
+            
+                    
+                    Weave
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" >
+            
+                <span>
+            
+                    
+                    服务网格(serviceMesh)
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.5.1" data-path="../../../../environment/virtual/serviceMesh/istio/istio.html">
+            
+                <a href="../../../../environment/virtual/serviceMesh/istio/istio.html">
+            
+                    
+                    Istio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.2" data-path="../../../../environment/virtual/serviceMesh/linkerd/linkerd.html">
+            
+                <a href="../../../../environment/virtual/serviceMesh/linkerd/linkerd.html">
+            
+                    
+                    Linkerd
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../../../../environment/filesystem/ceph/ceph.html">
+            
+                <a href="../../../../environment/filesystem/ceph/ceph.html">
+            
+                    
+                    Ceph
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../../../../environment/filesystem/fastdfs/fastdfs.html">
+            
+                <a href="../../../../environment/filesystem/fastdfs/fastdfs.html">
+            
+                    
+                    Fastdfs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="../../../../environment/filesystem/gpfs/gpfs.html">
+            
+                <a href="../../../../environment/filesystem/gpfs/gpfs.html">
+            
+                    
+                    IBM gpfs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="../../../../environment/filesystem/hdfs/hdfs.html">
+            
+                <a href="../../../../environment/filesystem/hdfs/hdfs.html">
+            
+                    
+                    Hdfs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="../../../../environment/filesystem/tfs/tfs.html">
+            
+                <a href="../../../../environment/filesystem/tfs/tfs.html">
+            
+                    
+                    TFS(淘宝)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11" >
+            
+                <span>
+            
+                    
+                    关系型数据库
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.11.1" data-path="../DB2/db2.html">
+            
+                <a href="../DB2/db2.html">
+            
+                    
+                    DB2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.11.2" data-path="mysql.html">
+            
+                <a href="mysql.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.3" data-path="../GaussDB/gaussdb.html">
+            
+                <a href="../GaussDB/gaussdb.html">
+            
+                    
+                    GaussDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.4" data-path="../Oracle/oracle.html">
+            
+                <a href="../Oracle/oracle.html">
+            
+                    
+                    Oracle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.5" data-path="../PostgreSQL/postgre.html">
+            
+                <a href="../PostgreSQL/postgre.html">
+            
+                    
+                    PostgreSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12" >
+            
+                <span>
+            
+                    
+                    NoSql
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.12.1" data-path="../../noSql/cassandra/cassandra.html">
+            
+                <a href="../../noSql/cassandra/cassandra.html">
+            
+                    
+                    Cassandra
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.2" data-path="../../noSql/elasticsearch/es.html">
+            
+                <a href="../../noSql/elasticsearch/es.html">
+            
+                    
+                    elasticsearch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.3" data-path="../../noSql/hbase/hbase.html">
+            
+                <a href="../../noSql/hbase/hbase.html">
+            
+                    
+                    Hbase
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.4" data-path="../../noSql/kudu/kudu.html">
+            
+                <a href="../../noSql/kudu/kudu.html">
+            
+                    
+                    Kudu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.5" data-path="../../noSql/mongdb/mongdb.html">
+            
+                <a href="../../noSql/mongdb/mongdb.html">
+            
+                    
+                    Mongdb
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.6" data-path="../../noSql/neo4j/neo4j.html">
+            
+                <a href="../../noSql/neo4j/neo4j.html">
+            
+                    
+                    Neo4j
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.7" data-path="../../noSql/tidb/tidb.html">
+            
+                <a href="../../noSql/tidb/tidb.html">
+            
+                    
+                    Tidb
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13" >
+            
+                <span>
+            
+                    
+                    内存数据库
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.13.1" data-path="../../inMemoryDatabase/redis/redis.html">
+            
+                <a href="../../inMemoryDatabase/redis/redis.html">
+            
+                    
+                    Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.2" data-path="../../inMemoryDatabase/memcache/memcache.html">
+            
+                <a href="../../inMemoryDatabase/memcache/memcache.html">
+            
+                    
+                    Memcache
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.3" data-path="../../inMemoryDatabase/ehcache/ehcache.html">
+            
+                <a href="../../inMemoryDatabase/ehcache/ehcache.html">
+            
+                    
+                    Ehcache
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.4" data-path="../../inMemoryDatabase/extremeScale/wxs.html">
+            
+                <a href="../../inMemoryDatabase/extremeScale/wxs.html">
+            
+                    
+                    eXtreme Scale
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.5" data-path="../../inMemoryDatabase/etcd/etcd.html">
+            
+                <a href="../../inMemoryDatabase/etcd/etcd.html">
+            
+                    
+                    Etcd
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.14" >
+            
+                <span>
+            
+                    
+                    微数据库
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.14.1" data-path="../../microdb/derby/derby.html">
+            
+                <a href="../../microdb/derby/derby.html">
+            
+                    
+                    Derby
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.14.2" data-path="../../microdb/h2/h2.html">
+            
+                <a href="../../microdb/h2/h2.html">
+            
+                    
+                    H2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.14.3" data-path="../../microdb/hsql/hsql.html">
+            
+                <a href="../../microdb/hsql/hsql.html">
+            
+                    
+                    HSql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.15" >
+            
+                <span>
+            
+                    
+                    web 容器
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.15.1" data-path="../../../middle/webContainer/apache/apache.html">
+            
+                <a href="../../../middle/webContainer/apache/apache.html">
+            
+                    
+                    Apache
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.15.2" data-path="../../../middle/webContainer/ihs/ihs.html">
+            
+                <a href="../../../middle/webContainer/ihs/ihs.html">
+            
+                    
+                    IHS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.15.3" data-path="../../../middle/webContainer/iis/iis.html">
+            
+                <a href="../../../middle/webContainer/iis/iis.html">
+            
+                    
+                    IIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.15.4" data-path="../../../middle/webContainer/jetty/jetty.html">
+            
+                <a href="../../../middle/webContainer/jetty/jetty.html">
+            
+                    
+                    Jetty
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.15.5" data-path="../../../middle/webContainer/tomcat/tomcat.html">
+            
+                <a href="../../../middle/webContainer/tomcat/tomcat.html">
+            
+                    
+                    Tomcat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.15.6" data-path="../../../middle/webContainer/was/was.html">
+            
+                <a href="../../../middle/webContainer/was/was.html">
+            
+                    
+                    WAS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.15.7" data-path="../../../middle/webContainer/weblogic/weblogic.html">
+            
+                <a href="../../../middle/webContainer/weblogic/weblogic.html">
+            
+                    
+                    Weblogic
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.16" >
+            
+                <span>
+            
+                    
+                    消息中间件
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.16.1" data-path="../../../middle/messageMid/activeMQ/activemq.html">
+            
+                <a href="../../../middle/messageMid/activeMQ/activemq.html">
+            
+                    
+                    activeMQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.16.2" data-path="../../../middle/messageMid/IBMMQ/ibmmq.html">
+            
+                <a href="../../../middle/messageMid/IBMMQ/ibmmq.html">
+            
+                    
+                    IBM MQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.16.3" data-path="../../../middle/messageMid/kafka/kafka.html">
+            
+                <a href="../../../middle/messageMid/kafka/kafka.html">
+            
+                    
+                    Kafka
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.16.4" data-path="../../../middle/messageMid/MBIIB/mbiib.html">
+            
+                <a href="../../../middle/messageMid/MBIIB/mbiib.html">
+            
+                    
+                    MBIIB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.16.5" data-path="../../../middle/messageMid/mule/mule.html">
+            
+                <a href="../../../middle/messageMid/mule/mule.html">
+            
+                    
+                    mule
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.16.6" data-path="../../../middle/messageMid/rabbitMQ/rabbirmq.md">
+            
+                <span>
+            
+                    
+                    rabbitMQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.17" >
+            
+                <span>
+            
+                    
+                    负载均衡(交易中间件)
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.17.1" data-path="../../../middle/loadBalance/cics/cics.html">
+            
+                <a href="../../../middle/loadBalance/cics/cics.html">
+            
+                    
+                    CICS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.17.2" data-path="../../../middle/loadBalance/kong/kong.html">
+            
+                <a href="../../../middle/loadBalance/kong/kong.html">
+            
+                    
+                    Kong
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.17.3" data-path="../../../middle/loadBalance/lvs/lvs.html">
+            
+                <a href="../../../middle/loadBalance/lvs/lvs.html">
+            
+                    
+                    LVS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.17.4" data-path="../../../middle/loadBalance/nginx/nginx.html">
+            
+                <a href="../../../middle/loadBalance/nginx/nginx.html">
+            
+                    
+                    Nginx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.17.5" data-path="../../../middle/loadBalance/tuxedo/tuxedo.html">
+            
+                <a href="../../../middle/loadBalance/tuxedo/tuxedo.html">
+            
+                    
+                    Tuxedo
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.18" >
+            
+                <span>
+            
+                    
+                    数据库中间件
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.18.1" data-path="../../../databaseMiddle/drds/drds.html">
+            
+                <a href="../../../databaseMiddle/drds/drds.html">
+            
+                    
+                    DRDS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.18.2" data-path="../../../databaseMiddle/myCat/myCat.md">
+            
+                <span>
+            
+                    
+                    MyCat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.18.3" data-path="../../../databaseMiddle/sharding-jdbc/sharejdbc.html">
+            
+                <a href="../../../databaseMiddle/sharding-jdbc/sharejdbc.html">
+            
+                    
+                    sharding-jdbc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.18.4" data-path="../../../databaseMiddle/proxysql/proxysql.html">
+            
+                <a href="../../../databaseMiddle/proxysql/proxysql.html">
+            
+                    
+                    ProxySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.19" data-path="../../../logCollection/filebeat/filebeat.html">
+            
+                <a href="../../../logCollection/filebeat/filebeat.html">
+            
+                    
+                    Filebeat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.20" data-path="../../../logCollection/fluented/fluented.html">
+            
+                <a href="../../../logCollection/fluented/fluented.html">
+            
+                    
+                    Fluented
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.21" data-path="../../../logCollection/flume/flume.html">
+            
+                <a href="../../../logCollection/flume/flume.html">
+            
+                    
+                    Flume
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.22" data-path="../../../logCollection/logstash/logstash.html">
+            
+                <a href="../../../logCollection/logstash/logstash.html">
+            
+                    
+                    Logstash
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.23" >
+            
+                <span>
+            
+                    
+                    指标监控
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.23.1" data-path="../../../monitor/indicator/Grafana/grafana.html">
+            
+                <a href="../../../monitor/indicator/Grafana/grafana.html">
+            
+                    
+                    Grafana
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.23.2" data-path="../../../monitor/indicator/InfluxDB/influxdb.html">
+            
+                <a href="../../../monitor/indicator/InfluxDB/influxdb.html">
+            
+                    
+                    InfluxDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.23.3" data-path="../../../monitor/indicator/kibana/kibana.html">
+            
+                <a href="../../../monitor/indicator/kibana/kibana.html">
+            
+                    
+                    Kibana
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.23.4" data-path="../../../monitor/indicator/promotheus/promotheus.html">
+            
+                <a href="../../../monitor/indicator/promotheus/promotheus.html">
+            
+                    
+                    Promotheus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.23.5" data-path="../../../monitor/indicator/Zabbix/zabbix.html">
+            
+                <a href="../../../monitor/indicator/Zabbix/zabbix.html">
+            
+                    
+                    Zabbix
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.24" >
+            
+                <span>
+            
+                    
+                    路径跟踪
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.24.1" data-path="../../../monitor/callChain/cat/cat.html">
+            
+                <a href="../../../monitor/callChain/cat/cat.html">
+            
+                    
+                    CAT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.24.2" data-path="../../../monitor/callChain/pinpoint/pinpoint.html">
+            
+                <a href="../../../monitor/callChain/pinpoint/pinpoint.html">
+            
+                    
+                    Pinpoint
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.24.3" data-path="../../../monitor/callChain/zipkin/zipkin.html">
+            
+                <a href="../../../monitor/callChain/zipkin/zipkin.html">
+            
+                    
+                    zipkin
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.25" data-path="../../../taskSchedule/crontab/crontab.html">
+            
+                <a href="../../../taskSchedule/crontab/crontab.html">
+            
+                    
+                    crontab
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.26" data-path="../../../taskSchedule/elasticjob/elasticjob.html">
+            
+                <a href="../../../taskSchedule/elasticjob/elasticjob.html">
+            
+                    
+                    elasticjob
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.27" data-path="../../../taskSchedule/oozie/oozie.html">
+            
+                <a href="../../../taskSchedule/oozie/oozie.html">
+            
+                    
+                    Oozie
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.28" data-path="../../../taskSchedule/supervisior/supervisior.html">
+            
+                <a href="../../../taskSchedule/supervisior/supervisior.html">
+            
+                    
+                    Supervisior
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.29" data-path="../../../taskSchedule/xxljob/xxljob.html">
+            
+                <a href="../../../taskSchedule/xxljob/xxljob.html">
+            
+                    
+                    xxljob
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.30" data-path="../../../highavailable/keepalived/keepalived.html">
+            
+                <a href="../../../highavailable/keepalived/keepalived.html">
+            
+                    
+                    keepalived
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.31" >
+            
+                <span>
+            
+                    
+                    配置中心
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.31.1" data-path="../../../distribute/configCenter/apollo/apollo.html">
+            
+                <a href="../../../distribute/configCenter/apollo/apollo.html">
+            
+                    
+                    Apollo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.31.2" data-path="../../../distribute/configCenter/diamond/diamond.html">
+            
+                <a href="../../../distribute/configCenter/diamond/diamond.html">
+            
+                    
+                    Diamond
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.31.3" data-path="../../../distribute/configCenter/disconf/disconf.html">
+            
+                <a href="../../../distribute/configCenter/disconf/disconf.html">
+            
+                    
+                    Disconf
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.32" >
+            
+                <span>
+            
+                    
+                    注册中心
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.32.1" data-path="../../../distribute/registry/consul/consul.html">
+            
+                <a href="../../../distribute/registry/consul/consul.html">
+            
+                    
+                    Consul
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.32.2" data-path="../../../distribute/registry/nacos/nacos.html">
+            
+                <a href="../../../distribute/registry/nacos/nacos.html">
+            
+                    
+                    Cacos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.32.3" data-path="../../../distribute/registry/zookpeeper/zookeeper.md">
+            
+                <span>
+            
+                    
+                    Zookeeper
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.33" >
+            
+                <span>
+            
+                    
+                    断路器
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.33.1" data-path="../../../distribute/fuse/sentinel/sentinel.html">
+            
+                <a href="../../../distribute/fuse/sentinel/sentinel.html">
+            
+                    
+                    Sentinel
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.34" >
+            
+                <span>
+            
+                    
+                    Spring Cloud
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.34.1" data-path="../../../distribute/springcloud/config/config.html">
+            
+                <a href="../../../distribute/springcloud/config/config.html">
+            
+                    
+                    config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.34.2" data-path="../../../distribute/springcloud/eureka/eureka.html">
+            
+                <a href="../../../distribute/springcloud/eureka/eureka.html">
+            
+                    
+                    Eureka
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.34.3" data-path="../../../distribute/springcloud/feign/feign.html">
+            
+                <a href="../../../distribute/springcloud/feign/feign.html">
+            
+                    
+                    Feign
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.34.4" data-path="../../../distribute/springcloud/Hystrix/hystrix.html">
+            
+                <a href="../../../distribute/springcloud/Hystrix/hystrix.html">
+            
+                    
+                    Hystrix
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.34.5" data-path="../../../distribute/springcloud/ribbon/ribbon.html">
+            
+                <a href="../../../distribute/springcloud/ribbon/ribbon.html">
+            
+                    
+                    Ribbon
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.34.6" data-path="../../../distribute/springcloud/zuul/zuul.html">
+            
+                <a href="../../../distribute/springcloud/zuul/zuul.html">
+            
+                    
+                    Zuul
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.35" >
+            
+                <span>
+            
+                    
+                    数据汇聚
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.35.1" data-path="../../../bigdata/dataAggregation/apacheNutch/nutch.html">
+            
+                <a href="../../../bigdata/dataAggregation/apacheNutch/nutch.html">
+            
+                    
+                    Apache nutch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.35.2" data-path="../../../bigdata/dataAggregation/canal/canal.html">
+            
+                <a href="../../../bigdata/dataAggregation/canal/canal.html">
+            
+                    
+                    Canal
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.35.3" data-path="../../../bigdata/dataAggregation/datax/datax.html">
+            
+                <a href="../../../bigdata/dataAggregation/datax/datax.html">
+            
+                    
+                    Datax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.35.4" data-path="../../../bigdata/dataAggregation/cdc/cdc.md">
+            
+                <span>
+            
+                    
+                    IBM CDC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.35.5" data-path="../../../bigdata/dataAggregation/kettle/kettle.html">
+            
+                <a href="../../../bigdata/dataAggregation/kettle/kettle.html">
+            
+                    
+                    Kettle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.35.6" data-path="../../../bigdata/dataAggregation/sqoop/sqoop.html">
+            
+                <a href="../../../bigdata/dataAggregation/sqoop/sqoop.html">
+            
+                    
+                    Sqoop
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.36" >
+            
+                <span>
+            
+                    
+                    资源调度
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.36.1" data-path="../../../bigdata/resourceSchedule/yarn/yarn.html">
+            
+                <a href="../../../bigdata/resourceSchedule/yarn/yarn.html">
+            
+                    
+                    Yarn
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.36.2" data-path="../../../bigdata/resourceSchedule/mesos/mesos.html">
+            
+                <a href="../../../bigdata/resourceSchedule/mesos/mesos.html">
+            
+                    
+                    Mesos
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.37" >
+            
+                <span>
+            
+                    
+                    数据计算
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.37.1" data-path="../../../bigdata/dataCompute/mapreduce/mapreduce.md">
+            
+                <span>
+            
+                    
+                    mapReduce
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.37.2" data-path="../../../bigdata/dataCompute/spark/spark.md">
+            
+                <span>
+            
+                    
+                    Spark
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.37.3" data-path="../../../bigdata/dataCompute/storm/storm.md">
+            
+                <span>
+            
+                    
+                    Storm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.37.4" data-path="../../../bigdata/dataCompute/flink/flink.md">
+            
+                <span>
+            
+                    
+                    Flink
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.38" >
+            
+                <span>
+            
+                    
+                    数据分析
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.38.1" data-path="../../../bigdata/dataAnalysis/analyticDB/analyticdb.html">
+            
+                <a href="../../../bigdata/dataAnalysis/analyticDB/analyticdb.html">
+            
+                    
+                    AnalyticDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.38.2" data-path="../../../bigdata/dataAnalysis/clickhouse/clickhouse.html">
+            
+                <a href="../../../bigdata/dataAnalysis/clickhouse/clickhouse.html">
+            
+                    
+                    Clickhouse
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.38.3" data-path="../../../bigdata/dataAnalysis/greenplum/greenplum.html">
+            
+                <a href="../../../bigdata/dataAnalysis/greenplum/greenplum.html">
+            
+                    
+                    Greenplum
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.38.4" data-path="../../../bigdata/dataAnalysis/hawk/hawk.html">
+            
+                <a href="../../../bigdata/dataAnalysis/hawk/hawk.html">
+            
+                    
+                    Hawk
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.38.5" data-path="../../../bigdata/dataAnalysis/hive/hive.html">
+            
+                <a href="../../../bigdata/dataAnalysis/hive/hive.html">
+            
+                    
+                    Hive
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.38.6" data-path="../../../bigdata/dataAnalysis/impala/impala.html">
+            
+                <a href="../../../bigdata/dataAnalysis/impala/impala.html">
+            
+                    
+                    Impala
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.38.7" data-path="../../../bigdata/dataAnalysis/kylin/kylin.html">
+            
+                <a href="../../../bigdata/dataAnalysis/kylin/kylin.html">
+            
+                    
+                    Kylin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.38.8" data-path="../../../bigdata/dataAnalysis/phoenix/phoenix.html">
+            
+                <a href="../../../bigdata/dataAnalysis/phoenix/phoenix.html">
+            
+                    
+                    Phoenix
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.38.9" data-path="../../../bigdata/dataAnalysis/pig/pig.html">
+            
+                <a href="../../../bigdata/dataAnalysis/pig/pig.html">
+            
+                    
+                    Pig
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.38.10" data-path="../../../bigdata/dataAnalysis/presto/presto.html">
+            
+                <a href="../../../bigdata/dataAnalysis/presto/presto.html">
+            
+                    
+                    Presto
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.39" >
+            
+                <span>
+            
+                    
+                    商业智能
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.39.1" data-path="../../../bigdata/BI/bipilot/bipilot.html">
+            
+                <a href="../../../bigdata/BI/bipilot/bipilot.html">
+            
+                    
+                    BI-Pilot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.39.2" data-path="../../../bigdata/BI/fineBI/fineBI.html">
+            
+                <a href="../../../bigdata/BI/fineBI/fineBI.html">
+            
+                    
+                    FineBI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.39.3" data-path="../../../bigdata/BI/powerBI/powerBI.html">
+            
+                <a href="../../../bigdata/BI/powerBI/powerBI.html">
+            
+                    
+                    Power BI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.39.4" data-path="../../../bigdata/BI/tableau/tableau.html">
+            
+                <a href="../../../bigdata/BI/tableau/tableau.html">
+            
+                    
+                    Tableau
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.40" data-path="../../../blockchain/fabric/fabric.html">
+            
+                <a href="../../../blockchain/fabric/fabric.html">
+            
+                    
+                    fabric
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.41" >
+            
+                <span>
+            
+                    
+                    HTML
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.41.1" data-path="../../../../framework/client/html/bootstrap/bootstrap.html">
+            
+                <a href="../../../../framework/client/html/bootstrap/bootstrap.html">
+            
+                    
+                    Bootstrap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.41.2" data-path="../../../../framework/client/html/amazeUI/amazeui.html">
+            
+                <a href="../../../../framework/client/html/amazeUI/amazeui.html">
+            
+                    
+                    Amaze UI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.41.3" data-path="../../../../framework/client/html/frozenUI/frozenui.html">
+            
+                <a href="../../../../framework/client/html/frozenUI/frozenui.html">
+            
+                    
+                    Frozen UI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.42" >
+            
+                <span>
+            
+                    
+                    JavaScript
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.42.1" data-path="../../../../framework/client/javascript/vue/vue.html">
+            
+                <a href="../../../../framework/client/javascript/vue/vue.html">
+            
+                    
+                    VUE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.42.2" data-path="../../../../framework/client/javascript/angular/angular.html">
+            
+                <a href="../../../../framework/client/javascript/angular/angular.html">
+            
+                    
+                    Angular
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.42.3" data-path="../../../../framework/client/javascript/JQuery/JQuery.html">
+            
+                <a href="../../../../framework/client/javascript/JQuery/JQuery.html">
+            
+                    
+                    JQuery
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.42.4" data-path="../../../../framework/client/javascript/react/react.html">
+            
+                <a href="../../../../framework/client/javascript/react/react.html">
+            
+                    
+                    React
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.42.5" data-path="../../../../framework/client/javascript/nodejs/nodejs.html">
+            
+                <a href="../../../../framework/client/javascript/nodejs/nodejs.html">
+            
+                    
+                    Node.Js
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.42.6" data-path="../../../../framework/client/javascript/zepto/zepto.html">
+            
+                <a href="../../../../framework/client/javascript/zepto/zepto.html">
+            
+                    
+                    Zepto
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.42.7" data-path="../../../../framework/client/javascript/jsbridge/jsbridge.html">
+            
+                <a href="../../../../framework/client/javascript/jsbridge/jsbridge.html">
+            
+                    
+                    JsBridge
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.43" >
+            
+                <span>
+            
+                    
+                    Python
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.43.1" data-path="../../../../framework/client/python/tornado/tornado.html">
+            
+                <a href="../../../../framework/client/python/tornado/tornado.html">
+            
+                    
+                    Tornado
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.43.2" data-path="../../../../framework/client/python/django/django.html">
+            
+                <a href="../../../../framework/client/python/django/django.html">
+            
+                    
+                    Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.44" data-path="../../../../framework/server/development/dubbo/dubbo.html">
+            
+                <a href="../../../../framework/server/development/dubbo/dubbo.html">
+            
+                    
+                    Dubbo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.45" data-path="../../../../framework/server/development/spring/spring.html">
+            
+                <a href="../../../../framework/server/development/spring/spring.html">
+            
+                    
+                    Spring
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.46" data-path="../../../../framework/server/development/seasar/seasar.html">
+            
+                <a href="../../../../framework/server/development/seasar/seasar.html">
+            
+                    
+                    Seasar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.47" data-path="../../../../framework/server/development/springboot/springboor.md">
+            
+                <span>
+            
+                    
+                    Springboot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.48" data-path="../../../../framework/server/development/springmvc/springmvc.html">
+            
+                <a href="../../../../framework/server/development/springmvc/springmvc.html">
+            
+                    
+                    SpringmMVC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.49" >
+            
+                <span>
+            
+                    
+                    连接池
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.49.1" data-path="../../../../framework/server/dataAccess/connectPool/c3p0/c3p0.html">
+            
+                <a href="../../../../framework/server/dataAccess/connectPool/c3p0/c3p0.html">
+            
+                    
+                    C3P0
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.49.2" data-path="../../../../framework/server/dataAccess/connectPool/dbcp/dbcp.html">
+            
+                <a href="../../../../framework/server/dataAccess/connectPool/dbcp/dbcp.html">
+            
+                    
+                    DBCP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.49.3" data-path="../../../../framework/server/dataAccess/connectPool/druid/druid.html">
+            
+                <a href="../../../../framework/server/dataAccess/connectPool/druid/druid.html">
+            
+                    
+                    Druid
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.49.4" data-path="../../../../framework/server/dataAccess/connectPool/hikaricp/hikaricp.html">
+            
+                <a href="../../../../framework/server/dataAccess/connectPool/hikaricp/hikaricp.html">
+            
+                    
+                    HikariCP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.50" >
+            
+                <span>
+            
+                    
+                    持久成框架
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.50.1" data-path="../../../../framework/server/dataAccess/persistence/hibernate/hibernate.html">
+            
+                <a href="../../../../framework/server/dataAccess/persistence/hibernate/hibernate.html">
+            
+                    
+                    Hibernate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.50.2" data-path="../../../../framework/server/dataAccess/persistence/mybatis/mybatis.html">
+            
+                <a href="../../../../framework/server/dataAccess/persistence/mybatis/mybatis.html">
+            
+                    
+                    Mybatis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.50.3" data-path="../../../../framework/server/dataAccess/persistence/jpa/jpa.html">
+            
+                <a href="../../../../framework/server/dataAccess/persistence/jpa/jpa.html">
+            
+                    
+                    Spring JPA
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.51" data-path="../../../../framework/server/communication/mina/mina.html">
+            
+                <a href="../../../../framework/server/communication/mina/mina.html">
+            
+                    
+                    Mina
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.52" data-path="../../../../framework/server/communication/nrtty/netty.md">
+            
+                <span>
+            
+                    
+                    Netty
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.53" >
+            
+                <span>
+            
+                    
+                    XML
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.53.1" data-path="../../../../framework/server/formatAnalysis/xml/dom/dom.html">
+            
+                <a href="../../../../framework/server/formatAnalysis/xml/dom/dom.html">
+            
+                    
+                    Dom
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.53.2" data-path="../../../../framework/server/formatAnalysis/xml/dom4j/dom4j.html">
+            
+                <a href="../../../../framework/server/formatAnalysis/xml/dom4j/dom4j.html">
+            
+                    
+                    Dom4J
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.53.3" data-path="../../../../framework/server/formatAnalysis/xml/jdom/jdom.html">
+            
+                <a href="../../../../framework/server/formatAnalysis/xml/jdom/jdom.html">
+            
+                    
+                    JDom
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.53.4" data-path="../../../../framework/server/formatAnalysis/xml/sax/sax.html">
+            
+                <a href="../../../../framework/server/formatAnalysis/xml/sax/sax.html">
+            
+                    
+                    SAX
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.54" >
+            
+                <span>
+            
+                    
+                    JSON
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.54.1" data-path="../../../../framework/server/formatAnalysis/json/fastjson/fastjson.html">
+            
+                <a href="../../../../framework/server/formatAnalysis/json/fastjson/fastjson.html">
+            
+                    
+                    fastjson
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.54.2" data-path="../../../../framework/server/formatAnalysis/json/gson/gson.html">
+            
+                <a href="../../../../framework/server/formatAnalysis/json/gson/gson.html">
+            
+                    
+                    Gson
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.54.3" data-path="../../../../framework/server/formatAnalysis/json/jackjson/jackjson.md">
+            
+                <span>
+            
+                    
+                    Jackjson
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.54.4" data-path="../../../../framework/server/formatAnalysis/json/json-lib/jsonlib.html">
+            
+                <a href="../../../../framework/server/formatAnalysis/json/json-lib/jsonlib.html">
+            
+                    
+                    Json-lib
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.55" data-path="../../../../framework/server/security/apacheShiro/shiro.html">
+            
+                <a href="../../../../framework/server/security/apacheShiro/shiro.html">
+            
+                    
+                    Apache Shiro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.56" data-path="../../../../framework/server/security/springSecurity/security.html">
+            
+                <a href="../../../../framework/server/security/springSecurity/security.html">
+            
+                    
+                    Spring Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.57" data-path="../../../../framework/server/taskScheduler/quartz/quartz.html">
+            
+                <a href="../../../../framework/server/taskScheduler/quartz/quartz.html">
+            
+                    
+                    Quartz
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.58" data-path="../../../../framework/server/taskScheduler/springTask/task.html">
+            
+                <a href="../../../../framework/server/taskScheduler/springTask/task.html">
+            
+                    
+                    Spring Task
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.59" data-path="../../../../framework/server/workflow/activiti/activiti.html">
+            
+                <a href="../../../../framework/server/workflow/activiti/activiti.html">
+            
+                    
+                    Activiti
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.60" >
+            
+                <span>
+            
+                    
+                    日志接口
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.60.1" data-path="../../../../framework/server/log/interface/slf4j/slf4j.html">
+            
+                <a href="../../../../framework/server/log/interface/slf4j/slf4j.html">
+            
+                    
+                    SLF4J
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.60.2" data-path="../../../../framework/server/log/interface/commons-logging/commons-logging.html">
+            
+                <a href="../../../../framework/server/log/interface/commons-logging/commons-logging.html">
+            
+                    
+                    commons-logging
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.61" >
+            
+                <span>
+            
+                    
+                    日志实现
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.61.1" data-path="../../../../framework/server/log/implements/log4j/log4j.html">
+            
+                <a href="../../../../framework/server/log/implements/log4j/log4j.html">
+            
+                    
+                    log4j
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.61.2" data-path="../../../../framework/server/log/implements/log4j2/log4j2.md">
+            
+                <span>
+            
+                    
+                    log4j2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.61.3" data-path="../../../../framework/server/log/implements/logback/logback.md">
+            
+                <span>
+            
+                    
+                    logback
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.62" data-path="../../../../framework/server/metrics/metrics/metrics.html">
+            
+                <a href="../../../../framework/server/metrics/metrics/metrics.html">
+            
+                    
+                    Metrics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.63" data-path="../../../../framework/server/metrics/sleuth/sleuth.html">
+            
+                <a href="../../../../framework/server/metrics/sleuth/sleuth.html">
+            
+                    
+                    Sleuth
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.64" data-path="../../../../framework/server/machinelearning/LightGBM/lightgbm.html">
+            
+                <a href="../../../../framework/server/machinelearning/LightGBM/lightgbm.html">
+            
+                    
+                    LightGBM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.65" data-path="../../../../framework/server/machinelearning/MXNet/mxnet.html">
+            
+                <a href="../../../../framework/server/machinelearning/MXNet/mxnet.html">
+            
+                    
+                    MXNet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.66" data-path="../../../../framework/server/machinelearning/PyTorch/pytorch.html">
+            
+                <a href="../../../../framework/server/machinelearning/PyTorch/pytorch.html">
+            
+                    
+                    PyTorch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.67" data-path="../../../../framework/server/machinelearning/TensorFlow/tensorflow.html">
+            
+                <a href="../../../../framework/server/machinelearning/TensorFlow/tensorflow.html">
+            
+                    
+                    TensorFlow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.68" data-path="../../../../framework/server/crawl/PHPCrawl/phpcrawl.md">
+            
+                <span>
+            
+                    
+                    PHPCrawl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.69" data-path="../../../../framework/server/crawl/Scrapy/scrapy.html">
+            
+                <a href="../../../../framework/server/crawl/Scrapy/scrapy.html">
+            
+                    
+                    Scrapy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.70" data-path="../../../../framework/server/crawl/WebMagic/webmagic.html">
+            
+                <a href="../../../../framework/server/crawl/WebMagic/webmagic.html">
+            
+                    
+                    WebMagic
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.71" >
+            
+                <span>
+            
+                    
+                    java
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.71.1" data-path="../../../../tools/develop/java/eclipse/eclipse.html">
+            
+                <a href="../../../../tools/develop/java/eclipse/eclipse.html">
+            
+                    
+                    Eclipse
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.71.2" data-path="../../../../tools/develop/java/idea/idea.html">
+            
+                <a href="../../../../tools/develop/java/idea/idea.html">
+            
+                    
+                    IDEA
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.72" >
+            
+                <span>
+            
+                    
+                    性能测试
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.72.1" data-path="../../../../tools/test/performance/LoadRunner/loadrunner.html">
+            
+                <a href="../../../../tools/test/performance/LoadRunner/loadrunner.html">
+            
+                    
+                    LoadRunner
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.73" >
+            
+                <span>
+            
+                    
+                    自动化测试
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.73.1" data-path="../../../../tools/test/automation/SeleniumHQ/seleniumhq.html">
+            
+                <a href="../../../../tools/test/automation/SeleniumHQ/seleniumhq.html">
+            
+                    
+                    SeleniumHQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.73.2" data-path="../../../../tools/test/automation/Jmeter/jmeter.html">
+            
+                <a href="../../../../tools/test/automation/Jmeter/jmeter.html">
+            
+                    
+                    Jmeter
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.74" >
+            
+                <span>
+            
+                    
+                    需求(项目)管理
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.74.1" data-path="../../../../tools/integration/projectManager/cq/cq.html">
+            
+                <a href="../../../../tools/integration/projectManager/cq/cq.html">
+            
+                    
+                    CQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.74.2" data-path="../../../../tools/integration/projectManager/jira/jira.html">
+            
+                <a href="../../../../tools/integration/projectManager/jira/jira.html">
+            
+                    
+                    JIRA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.74.3" data-path="../../../../tools/integration/projectManager/redmine/redmine.html">
+            
+                <a href="../../../../tools/integration/projectManager/redmine/redmine.html">
+            
+                    
+                    Redmine
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.75" >
+            
+                <span>
+            
+                    
+                    代码(版本)管理
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.75.1" data-path="../../../../tools/integration/codeManager/git/git.html">
+            
+                <a href="../../../../tools/integration/codeManager/git/git.html">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.75.2" data-path="../../../../tools/integration/codeManager/svn/svn.html">
+            
+                <a href="../../../../tools/integration/codeManager/svn/svn.html">
+            
+                    
+                    SVN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.75.3" data-path="../../../../tools/integration/codeManager/cc/cc.html">
+            
+                <a href="../../../../tools/integration/codeManager/cc/cc.html">
+            
+                    
+                    CC
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.76" >
+            
+                <span>
+            
+                    
+                    构建工具
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.76.1" data-path="../../../../tools/integration/buildTool/ant/ant.html">
+            
+                <a href="../../../../tools/integration/buildTool/ant/ant.html">
+            
+                    
+                    Ant
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.76.2" data-path="../../../../tools/integration/buildTool/maven/maven.html">
+            
+                <a href="../../../../tools/integration/buildTool/maven/maven.html">
+            
+                    
+                    Maven
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.76.3" data-path="../../../../tools/integration/buildTool/gradle/gradle.html">
+            
+                <a href="../../../../tools/integration/buildTool/gradle/gradle.html">
+            
+                    
+                    Gradle
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.77" >
+            
+                <span>
+            
+                    
+                    集成
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.77.1" data-path="../../../../tools/integration/integrat/jenkins/jenkins.html">
+            
+                <a href="../../../../tools/integration/integrat/jenkins/jenkins.html">
+            
+                    
+                    Jenkins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.77.2" data-path="../../../../tools/integration/integrat/travisci/travisci.html">
+            
+                <a href="../../../../tools/integration/integrat/travisci/travisci.html">
+            
+                    
+                    Travis CI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.78" >
+            
+                <span>
+            
+                    
+                    运维自动化
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.78.1" data-path="../../../../tools/operation/automation/puppet/puppet.html">
+            
+                <a href="../../../../tools/operation/automation/puppet/puppet.html">
+            
+                    
+                    Puppet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.78.2" data-path="../../../../tools/operation/automation/saltstack/saltstack.html">
+            
+                <a href="../../../../tools/operation/automation/saltstack/saltstack.html">
+            
+                    
+                    SaltStack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.78.3" data-path="../../../../tools/operation/automation/ansible/ansible.html">
+            
+                <a href="../../../../tools/operation/automation/ansible/ansible.html">
+            
+                    
+                    Ansible
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.79" >
+            
+                <span>
+            
+                    
+                    运维监控
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.79.1" data-path="../../../../tools/operation/monitor/pandora/pandora.html">
+            
+                <a href="../../../../tools/operation/monitor/pandora/pandora.html">
+            
+                    
+                    Pandora
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.80" >
+            
+                <span>
+            
+                    
+                    报文标准
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.80.1" data-path="../../../../protocols/message/8583/8583.html">
+            
+                <a href="../../../../protocols/message/8583/8583.html">
+            
+                    
+                    8583
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.80.2" data-path="../../../../protocols/message/csv/csv.html">
+            
+                <a href="../../../../protocols/message/csv/csv.html">
+            
+                    
+                    CSV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.80.3" data-path="../../../../protocols/message/json/json.html">
+            
+                <a href="../../../../protocols/message/json/json.html">
+            
+                    
+                    Json
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.80.4" data-path="../../../../protocols/message/xml/xml.html">
+            
+                <a href="../../../../protocols/message/xml/xml.html">
+            
+                    
+                    XML
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.81" >
+            
+                <span>
+            
+                    
+                    通信协议
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.81.1" >
+            
+                <span>
+            
+                    
+                    标准协议
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.81.1.1" data-path="../../../../protocols/transport/standard/http/http.md">
+            
+                <span>
+            
+                    
+                    HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.81.1.2" data-path="../../../../protocols/transport/standard/rest/rest.md">
+            
+                <span>
+            
+                    
+                    REST
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.81.1.3" data-path="../../../../protocols/transport/standard/socket/socket.md">
+            
+                <span>
+            
+                    
+                    SOCKET
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.81.2" >
+            
+                <span>
+            
+                    
+                    RPC
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.81.2.1" data-path="../../../../protocols/transport/rpc/avro/avro.html">
+            
+                <a href="../../../../protocols/transport/rpc/avro/avro.html">
+            
+                    
+                    Avro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.81.2.2" data-path="../../../../protocols/transport/rpc/dubbo/dubbo.html">
+            
+                <a href="../../../../protocols/transport/rpc/dubbo/dubbo.html">
+            
+                    
+                    Dubbo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.81.2.3" data-path="../../../../protocols/transport/rpc/grpc/grpc.html">
+            
+                <a href="../../../../protocols/transport/rpc/grpc/grpc.html">
+            
+                    
+                    Grpc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.81.2.4" data-path="../../../../protocols/transport/rpc/hsf/hsf.html">
+            
+                <a href="../../../../protocols/transport/rpc/hsf/hsf.html">
+            
+                    
+                    HSF
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.81.3" >
+            
+                <span>
+            
+                    
+                    消息队列
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.81.3.1" data-path="../../../../protocols/transport/messageQueue/jms/jms.html">
+            
+                <a href="../../../../protocols/transport/messageQueue/jms/jms.html">
+            
+                    
+                    jms
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.82" >
+            
+                <span>
+            
+                    
+                    安全协议
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.82.1" data-path="../../../../protocols/security/basicauth/basicauth.html">
+            
+                <a href="../../../../protocols/security/basicauth/basicauth.html">
+            
+                    
+                    Basic Auth
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.82.2" data-path="../../../../protocols/security/fido/fido.html">
+            
+                <a href="../../../../protocols/security/fido/fido.html">
+            
+                    
+                    FIDO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.82.3" data-path="../../../../protocols/security/jwt/jwt.html">
+            
+                <a href="../../../../protocols/security/jwt/jwt.html">
+            
+                    
+                    JWT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.82.4" data-path="../../../../protocols/security/oauth2/oauth2.html">
+            
+                <a href="../../../../protocols/security/oauth2/oauth2.html">
+            
+                    
+                    OAuth2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.82.5" data-path="../../../../protocols/security/openid/openid.html">
+            
+                <a href="../../../../protocols/security/openid/openid.html">
+            
+                    
+                    OpenID
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.83" data-path="../../../../language/c/c.md">
+            
+                <span>
+            
+                    
+                    C
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.84" data-path="../../../../language/cobol/cobol.md">
+            
+                <span>
+            
+                    
+                    Cobol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.85" data-path="../../../../language/java/java.md">
+            
+                <span>
+            
+                    
+                    Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.86" data-path="../../../../language/lua/lua.md">
+            
+                <span>
+            
+                    
+                    Lua
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.87" data-path="../../../../language/python/python.md">
+            
+                <span>
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.88" data-path="../../../../language/scala/scala.md">
+            
+                <span>
+            
+                    
+                    Scala
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.89" data-path="../../../../language/vba/vba.md">
+            
+                <span>
+            
+                    
+                    VBA
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">案例</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" >
+            
+                <span>
+            
+                    
+                    大数据
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" >
+            
+                <span>
+            
+                    
+                    58
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" >
+            
+                <span>
+            
+                    
+                    滴滴
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" >
+            
+                <span>
+            
+                    
+                    QQ音乐
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" >
+            
+                <span>
+            
+                    
+                    机器学习
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">问题</li>
+        
+        
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../../.." >Mysql</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="mysql">MySQL</h3>
+<h4 id="&#x5B89;&#x88C5;&#x4F7F;&#x7528;">&#x5B89;&#x88C5;&#x4F7F;&#x7528;</h4>
+<p><strong>1.&#x5B89;&#x88C5;</strong>
+&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4F7F;&#x7528;docker&#x8FDB;&#x884C;&#x5B89;&#x88C5;</p>
+<pre><code class="lang-shell">docker run -p 3306:3306 --name mymysql -e MYSQL_ROOT_PASSWORD=123456 -d mysql
+</code></pre>
+<p><strong>2.&#x4F7F;&#x7528;</strong>
+&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#x547D;&#x4EE4;&#x8FDE;&#x63A5;mysql&#x6570;&#x636E;&#x5E93;</p>
+<pre><code class="lang-shell">mysql -uroot -p
+</code></pre>
+<h4 id="&#x65E5;&#x5FD7;&#x7C7B;&#x522B;">&#x65E5;&#x5FD7;&#x7C7B;&#x522B;</h4>
+<p>Mysql&#x4E2D;&#x5171;&#x6709;5&#x79CD;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#xFF0C;&#x5206;&#x522B;&#x4E3A;&#xFF1A;
+<strong>1.&#x9519;&#x8BEF;&#x65E5;&#x5FD7;(error log)</strong>
+&#x4E3B;&#x8981;&#x8BB0;&#x5F55;mysql&#x670D;&#x52A1;&#x7684;&#x542F;&#x505C;&#x65F6;&#x6B63;&#x786E;&#x548C;&#x9519;&#x8BEF;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x4EE5;&#x53CA;&#x542F;&#x52A8;&#x3001;&#x505C;&#x6B62;&#x3001;&#x8FD0;&#x884C;&#x8FC7;&#x7A0B;&#x4E2D;&#x7684;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#x3002;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#x67E5;&#x770B;&#x9519;&#x8BEF;&#x65E5;&#x5FD7;&#x7684;&#x4FDD;&#x5B58;&#x4F4D;&#x7F6E;</p>
+<pre><code>mysql&gt; show variables like &apos;log_error&apos;;
+</code></pre><p><strong>2.&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;(general log)</strong>
+&#x8BB0;&#x5F55;&#x5EFA;&#x7ACB;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x8FDE;&#x63A5;&#x548C;&#x6267;&#x884C;&#x7684;&#x8BED;&#x53E5;&#x3002;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#x5206;&#x4E3A;&#x4E00;&#x822C;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#x548C;&#x6162;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#xFF0C;&#x5B83;&#x4EEC;&#x662F;&#x901A;&#x8FC7;&#x67E5;&#x8BE2;&#x662F;&#x5426;&#x8D85;&#x51FA;&#x53D8;&#x91CF; long_query_time &#x6307;&#x5B9A;&#x65F6;&#x95F4;&#x7684;&#x503C;&#x6765;&#x5224;&#x5B9A;&#x7684;&#x3002;&#x5728;&#x8D85;&#x65F6;&#x65F6;&#x95F4;&#x5185;&#x5B8C;&#x6210;&#x7684;&#x67E5;&#x8BE2;&#x662F;&#x4E00;&#x822C;&#x67E5;&#x8BE2;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x5176;&#x8BB0;&#x5F55;&#x5230;&#x4E00;&#x822C;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#x4E2D;&#xFF08;&#x9ED8;&#x8BA4;&#x662F;&#x5173;&#x95ED;&#x7684;&#xFF09;&#xFF0C;&#x8D85;&#x51FA;&#x65F6;&#x95F4;&#x7684;&#x67E5;&#x8BE2;&#x662F;&#x6162;&#x67E5;&#x8BE2;&#x3002;&#x4F7F;&#x7528;&quot; --general_log={0|1} &quot;&#x6765;&#x51B3;&#x5B9A;&#x662F;&#x5426;&#x542F;&#x7528;&#x4E00;&#x822C;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#xFF0C;&#x4F7F;&#x7528;&quot; --general_log_file=file_name &quot;&#x6765;&#x6307;&#x5B9A;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#x7684;&#x8DEF;&#x5F84;&#x3002;
+&#x4E0E;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#x6709;&#x5173;&#x7684;&#x53D8;&#x91CF;&#x6709;&#xFF1A;</p>
+<pre><code>long_query_time = 10 # &#x6307;&#x5B9A;&#x6162;&#x67E5;&#x8BE2;&#x8D85;&#x65F6;&#x65F6;&#x957F;(&#x79D2;)&#xFF0C;&#x8D85;&#x51FA;&#x6B64;&#x65F6;&#x957F;&#x7684;&#x5C5E;&#x4E8E;&#x6162;&#x67E5;&#x8BE2;&#xFF0C;&#x4F1A;&#x8BB0;&#x5F55;&#x5230;&#x6162;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#x4E2D;
+log_output={TABLE|FILE|NONE}  # &#x5B9A;&#x4E49;&#x4E00;&#x822C;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#x548C;&#x6162;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#x7684;&#x8F93;&#x51FA;&#x683C;&#x5F0F;&#xFF0C;&#x4E0D;&#x6307;&#x5B9A;&#x65F6;&#x9ED8;&#x8BA4;&#x4E3A;file
+</code></pre><p>&#x4E0E;&#x4E00;&#x822C;&#x67E5;&#x8BE2;&#x6709;&#x5173;&#x7684;&#x53D8;&#x91CF;&#x6709;&#xFF1A;</p>
+<pre><code>general_log=off # &#x662F;&#x5426;&#x542F;&#x7528;&#x4E00;&#x822C;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#xFF0C;&#x4E3A;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#xFF0C;&#x5FC5;&#x987B;&#x5728;global&#x4E0A;&#x4FEE;&#x6539;&#x3002;
+sql_log_off=off # &#x5728;session&#x7EA7;&#x522B;&#x63A7;&#x5236;&#x662F;&#x5426;&#x542F;&#x7528;&#x4E00;&#x822C;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;off&#xFF0C;&#x5373;&#x542F;&#x7528;
+general_log_file=/mydata/data/hostname.log  # &#x9ED8;&#x8BA4;&#x662F;&#x5E93;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x4E0B;&#x4E3B;&#x673A;&#x540D;&#x52A0;&#x4E0A;.log
+</code></pre><p><strong>3.&#x6162;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;(slow log)</strong>
+&#x8BB0;&#x5F55;&#x6240;&#x6709;&#x6267;&#x884C;&#x65F6;&#x95F4;&#x8D85;&#x8FC7;long_query_time&#x7684;&#x6240;&#x6709;&#x67E5;&#x8BE2;&#x6216;&#x4E0D;&#x4F7F;&#x7528;&#x7D22;&#x5F15;&#x7684;&#x67E5;&#x8BE2;&#x3002;
+&#x4E0E;&#x6162;&#x67E5;&#x8BE2;&#x6709;&#x5173;&#x7684;&#x53C2;&#x6570;</p>
+<pre><code>log_slow_queries={yes|no}    # &#x662F;&#x5426;&#x542F;&#x7528;&#x6162;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E0D;&#x542F;&#x7528;
+slow_query_log={1|ON|0|OFF}  # &#x4E5F;&#x662F;&#x662F;&#x5426;&#x542F;&#x7528;&#x6162;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#xFF0C;&#x6B64;&#x53D8;&#x91CF;&#x548C;log_slow_queries&#x4FEE;&#x6539;&#x4E00;&#x4E2A;&#x53E6;&#x4E00;&#x4E2A;&#x540C;&#x65F6;&#x53D8;&#x5316;
+slow_query_log_file=/mydata/data/hostname-slow.log  #&#x9ED8;&#x8BA4;&#x8DEF;&#x5F84;&#x4E3A;&#x5E93;&#x6587;&#x4EF6;&#x76EE;&#x5F55;&#x4E0B;&#x4E3B;&#x673A;&#x540D;&#x52A0;&#x4E0A;-slow.log
+log_queries_not_using_indexes=OFF # &#x67E5;&#x8BE2;&#x6CA1;&#x6709;&#x4F7F;&#x7528;&#x7D22;&#x5F15;&#x7684;&#x65F6;&#x5019;&#x662F;&#x5426;&#x4E5F;&#x8BB0;&#x5165;&#x6162;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;
+</code></pre><p><strong>4.&#x4E8C;&#x8FDB;&#x5236;&#x65E5;&#x5FD7;(bin log)</strong>
+&#x8BB0;&#x5F55;&#x6240;&#x6709;&#x66F4;&#x6539;&#x6570;&#x636E;&#x7684;&#x8BED;&#x53E5;&#xFF0C;&#x53EF;&#x7528;&#x4E8E;&#x6570;&#x636E;&#x590D;&#x5236;&#x3002;MySQL&#x9ED8;&#x8BA4;&#x6CA1;&#x6709;&#x542F;&#x52A8;&#x4E8C;&#x8FDB;&#x5236;&#x65E5;&#x5FD7;&#xFF0C;&#x8981;&#x542F;&#x7528;&#x4E8C;&#x8FDB;&#x5236;&#x65E5;&#x5FD7;&#x4F7F;&#x7528; --log-bin=[on|off|file_name] &#x9009;&#x9879;&#x6307;&#x5B9A;&#xFF0C;&#x6216;&#x8005;&#x5728;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x7684;[mysqld]&#x90E8;&#x5206;&#x8BBE;&#x7F6E;log-bin&#x4E5F;&#x53EF;&#x4EE5;&#x3002;</p>
+<pre><code>[mysqld]
+log-bin=[on|filename]
+</code></pre><p>&#x4E0E;&#x4E8C;&#x8FDB;&#x5236;&#x65E5;&#x5FD7;&#x6709;&#x5173;&#x7684;&#x53C2;&#x6570;</p>
+<pre><code class="lang-shell">log_bin = {on | off | base_name} #&#x6307;&#x5B9A;&#x662F;&#x5426;&#x542F;&#x7528;&#x8BB0;&#x5F55;&#x4E8C;&#x8FDB;&#x5236;&#x65E5;&#x5FD7;&#x6216;&#x8005;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x65E5;&#x5FD7;&#x8DEF;&#x5F84;(&#x8DEF;&#x5F84;&#x4E0D;&#x80FD;&#x52A0;.&#x5426;&#x5219;.&#x540E;&#x7684;&#x88AB;&#x5FFD;&#x7565;)
+sql_log_bin ={ on | off } #&#x6307;&#x5B9A;&#x662F;&#x5426;&#x542F;&#x7528;&#x8BB0;&#x5F55;&#x4E8C;&#x8FDB;&#x5236;&#x65E5;&#x5FD7;&#xFF0C;&#x53EA;&#x6709;&#x5728;log_bin&#x5F00;&#x542F;&#x7684;&#x65F6;&#x5019;&#x624D;&#x6709;&#x6548;
+expire_logs_days = #&#x6307;&#x5B9A;&#x81EA;&#x52A8;&#x5220;&#x9664;&#x4E8C;&#x8FDB;&#x5236;&#x65E5;&#x5FD7;&#x7684;&#x65F6;&#x95F4;&#xFF0C;&#x5373;&#x65E5;&#x5FD7;&#x8FC7;&#x671F;&#x65F6;&#x95F4;
+binlog_do_db = #&#x660E;&#x786E;&#x6307;&#x5B9A;&#x8981;&#x8BB0;&#x5F55;&#x65E5;&#x5FD7;&#x7684;&#x6570;&#x636E;&#x5E93;
+binlog_ignore_db = #&#x6307;&#x5B9A;&#x4E0D;&#x8BB0;&#x5F55;&#x4E8C;&#x8FDB;&#x5236;&#x65E5;&#x5FD7;&#x7684;&#x6570;&#x636E;&#x5E93;
+...
+</code></pre>
+<p><strong>5.&#x4E2D;&#x7EE7;&#x65E5;&#x5FD7;(relay log)</strong>
+&#x4E3B;&#x4ECE;&#x590D;&#x5236;&#x65F6;&#x4F7F;&#x7528;&#x7684;&#x65E5;&#x5FD7;&#xFF0C;&#x5982;&#x56FE;&#x4E3A;relay log&#x5728;&#x4E3B;&#x4ECE;&#x590D;&#x5236;&#x8FC7;&#x7A0B;&#x4E2D;&#x7684;&#x4F4D;&#x7F6E;&#x3002;
+<img src="relaylog.png" alt="avatar">
+&#x4E0B;&#x9762;&#x5C06;&#x5BF9;&#x4E3B;&#x4ECE;&#x590D;&#x5236;&#x9AD8;&#x53EF;&#x7528;&#x65B9;&#x6848;&#x505A;&#x7B80;&#x5355;&#x4ECB;&#x7ECD;&#x3002;</p>
+<h4 id="&#x9AD8;&#x53EF;&#x7528;&#x65B9;&#x6848;">&#x9AD8;&#x53EF;&#x7528;&#x65B9;&#x6848;</h4>
+<p>&#x6570;&#x636E;&#x590D;&#x5236;&#x63D0;&#x4F9B;&#x4E86;&#x6570;&#x636E;&#x5E93;&#x8BFB;&#x5199;&#x5206;&#x79BB;&#x7684;&#x80FD;&#x529B;&#xFF0C;&#x5199;&#x64CD;&#x4F5C;&#x53EA;&#x80FD;&#x5728;Master&#x8282;&#x70B9;&#x3002;MySQL&#x652F;&#x6301;4&#x79CD;&#x4E0D;&#x540C;&#x7684;&#x540C;&#x6B65;&#x65B9;&#x5F0F;&#xFF1A;&#x540C;&#x6B65;(synchronous)&#x3001;&#x534A;&#x540C;&#x6B65;(semisynchronous)&#x3001;&#x5F02;&#x6B65;(asynchronous)&#x3001;&#x5EF6;&#x8FDF;(delayed)&#x3002;
+<strong>1.&#x540C;&#x6B65;</strong>
+&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x9001;DDL/DML&#x8BED;&#x53E5;&#x7ED9;master&#xFF0C;master&#x6267;&#x884C;&#x5B8C;&#x6BD5;&#x540E;&#x8FD8;&#x9700;&#x8981;&#x7B49;&#x5F85;&#x6240;&#x6709;&#x7684;slave&#x90FD;&#x5199;&#x5B8C;&#x4E86;relay log&#x624D;&#x8BA4;&#x4E3A;&#x6B64;&#x6B21;DDL/DML&#x6210;&#x529F;&#xFF0C;&#x7136;&#x540E;&#x624D;&#x4F1A;&#x8FD4;&#x56DE;&#x6210;&#x529F;&#x4FE1;&#x606F;&#x7ED9;&#x5BA2;&#x6237;&#x7AEF;&#x3002;
+<img src="synchronous.png" alt="avatar">
+<strong>2.&#x534A;&#x540C;&#x6B65;</strong>
+&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x9001;DDL/DML&#x8BED;&#x53E5;&#x7ED9;master&#xFF0C;master&#x6267;&#x884C;&#x5B8C;&#x6BD5;&#x540E;&#x8FD8;&#x8981;&#x7B49;&#x5F85;&#x4E00;&#x4E2A;slave&#x5199;&#x5B8C;relay log&#x5E76;&#x8FD4;&#x56DE;&#x786E;&#x8BA4;&#x4FE1;&#x606F;&#x7ED9;master&#xFF0C;master&#x624D;&#x8BA4;&#x4E3A;&#x6B64;&#x6B21;DDL/DML&#x8BED;&#x53E5;&#x662F;&#x6210;&#x529F;&#x7684;&#xFF0C;&#x7136;&#x540E;&#x624D;&#x4F1A;&#x53D1;&#x9001;&#x6210;&#x529F;&#x4FE1;&#x606F;&#x7ED9;&#x5BA2;&#x6237;&#x7AEF;&#x3002;&#x534A;&#x540C;&#x6B65;&#x590D;&#x5236;&#x53EA;&#x9700;&#x7B49;&#x5F85;&#x4E00;&#x4E2A;slave&#x7684;&#x56DE;&#x5E94;&#xFF0C;&#x4E14;&#x7B49;&#x5F85;&#x7684;&#x8D85;&#x65F6;&#x65F6;&#x95F4;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#xFF0C;&#x8D85;&#x65F6;&#x540E;&#x4F1A;&#x81EA;&#x52A8;&#x964D;&#x7EA7;&#x4E3A;&#x5F02;&#x6B65;&#x590D;&#x5236;&#x3002;
+<img src="semisynchronous.png" alt="avatar">
+<strong>3.&#x5F02;&#x6B65;</strong>
+&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x9001;DDL/DML&#x8BED;&#x53E5;&#x7ED9;master&#xFF0C;master&#x6267;&#x884C;&#x5B8C;&#x6BD5;&#x7ACB;&#x5373;&#x8FD4;&#x56DE;&#x6210;&#x529F;&#x4FE1;&#x606F;&#x7ED9;&#x5BA2;&#x6237;&#x7AEF;&#xFF0C;&#x800C;&#x4E0D;&#x7BA1;slave&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x5F00;&#x59CB;&#x590D;&#x5236;&#x3002;&#x8FD9;&#x6837;&#x7684;&#x590D;&#x5236;&#x65B9;&#x5F0F;&#x5BFC;&#x81F4;&#x7684;&#x95EE;&#x9898;&#x662F;&#xFF0C;&#x5F53;master&#x5199;&#x5B8C;&#x4E86;binlog&#xFF0C;&#x800C;slave&#x8FD8;&#x6CA1;&#x6709;&#x5F00;&#x59CB;&#x590D;&#x5236;&#x6216;&#x8005;&#x590D;&#x5236;&#x8FD8;&#x6CA1;&#x5B8C;&#x6210;&#x65F6;&#xFF0C;slave&#x4E0A;&#x548C;master&#x4E0A;&#x7684;&#x6570;&#x636E;&#x6682;&#x65F6;&#x4E0D;&#x4E00;&#x81F4;&#xFF0C;&#x4E14;&#x6B64;&#x65F6;master&#x7A81;&#x7136;&#x5B95;&#x673A;&#xFF0C;slave&#x5C06;&#x4F1A;&#x4E22;&#x5931;&#x4E00;&#x90E8;&#x5206;&#x6570;&#x636E;&#x3002;
+<img src="asynchronous.png" alt="avatar">
+<strong>4.&#x5EF6;&#x8FDF;</strong>
+&#x987E;&#x540D;&#x601D;&#x4E49;&#xFF0C;&#x5EF6;&#x8FDF;&#x590D;&#x5236;&#x5C31;&#x662F;&#x6545;&#x610F;&#x8BA9;slave&#x5EF6;&#x8FDF;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#x518D;&#x4ECE;master&#x4E0A;&#x8FDB;&#x884C;&#x590D;&#x5236;&#x3002;
+<strong>&#x4E3B;&#x4ECE;&#x590D;&#x5236;&#x8BBE;&#x7F6E;</strong>
+1.&#x4E3A;master&#x548C;slave&#x8BBE;&#x5B9A;&#x4E0D;&#x540C;&#x7684;server-id&#xFF0C;&#x8FD9;&#x662F;&#x4E3B;&#x4ECE;&#x590D;&#x5236;&#x7ED3;&#x6784;&#x4E2D;&#x975E;&#x5E38;&#x5173;&#x952E;&#x7684;&#x6807;&#x8BC6;&#x53F7;&#x3002;&#x5230;&#x4E86;MySQL 5.7&#xFF0C;&#x4E0D;&#x8BBE;&#x7F6E;server id&#x5C31;&#x65E0;&#x6CD5;&#x5F00;&#x542F;binlog&#x3002;&#x8BBE;&#x7F6E;server id&#x9700;&#x8981;&#x91CD;&#x542F;MySQL&#x5B9E;&#x4F8B;&#x3002;
+2.&#x5F00;&#x542F;master&#x7684;binlog&#x3002;&#x521A;&#x5B89;&#x88C5;&#x5E76;&#x521D;&#x59CB;&#x5316;&#x7684;MySQL&#x9ED8;&#x8BA4;&#x672A;&#x5F00;&#x542F;binlog&#xFF0C;&#x53EF;&#x4EE5;&#x624B;&#x52A8;&#x8BBE;&#x7F6E;binlog&#x4E14;&#x4E3A;&#x5176;&#x8BBE;&#x5B9A;&#x6587;&#x4EF6;&#x540D;&#xFF0C;&#x5426;&#x5219;&#x9ED8;&#x8BA4;&#x4EE5;&#x4E3B;&#x673A;&#x540D;&#x4E3A;&#x57FA;&#x540D;&#x65F6;&#x4FEE;&#x6539;&#x4E3B;&#x673A;&#x540D;&#x540E;&#x4F1A;&#x627E;&#x4E0D;&#x5230;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#x3002;
+3.&#x6700;&#x597D;&#x8BBE;&#x7F6E;master&#x4E0A;&#x7684;&#x53D8;&#x91CF;sync_binlog=1(MySQL 5.7.7&#x4E4B;&#x540E;&#x9ED8;&#x8BA4;&#x4E3A;1&#xFF0C;&#x4E4B;&#x524D;&#x7684;&#x7248;&#x672C;&#x9ED8;&#x8BA4;&#x4E3A;0)&#xFF0C;&#x8FD9;&#x6837;&#x6BCF;&#x5199;&#x4E00;&#x6B21;&#x4E8C;&#x8FDB;&#x5236;&#x65E5;&#x5FD7;&#x90FD;&#x5C06;&#x5176;&#x5237;&#x65B0;&#x5230;&#x78C1;&#x76D8;&#xFF0C;&#x8BA9;slave&#x670D;&#x52A1;&#x5668;&#x53EF;&#x4EE5;&#x5C3D;&#x5FEB;&#x5730;&#x590D;&#x5236;&#x3002;&#x9632;&#x6B62;&#x4E07;&#x4E00;master&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x65E5;&#x5FD7;&#x8FD8;&#x5728;&#x7F13;&#x5B58;&#x4E2D;&#x5C31;&#x5B95;&#x673A;&#x65F6;&#xFF0C;slave&#x65E0;&#x6CD5;&#x590D;&#x5236;&#x8FD9;&#x90E8;&#x5206;&#x4E22;&#x5931;&#x7684;&#x6570;&#x636E;&#x3002;
+4.&#x6700;&#x597D;&#x8BBE;&#x7F6E;master&#x4E0A;&#x7684;redo log&#x7684;&#x5237;&#x76D8;&#x53D8;&#x91CF;innodb_flush_log_at_trx_commit=1(&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;1)&#xFF0C;&#x8FD9;&#x6837;&#x6BCF;&#x6B21;&#x63D0;&#x4EA4;&#x4E8B;&#x52A1;&#x90FD;&#x4F1A;&#x7ACB;&#x5373;&#x5C06;&#x4E8B;&#x52A1;&#x5237;&#x76D8;&#x4FDD;&#x8BC1;&#x6301;&#x4E45;&#x6027;&#x548C;&#x4E00;&#x81F4;&#x6027;&#x3002;
+5.&#x5728;slave&#x4E0A;&#x5F00;&#x542F;&#x4E2D;&#x7EE7;&#x65E5;&#x5FD7;relay log&#x3002;&#x8FD9;&#x4E2A;&#x662F;&#x9ED8;&#x8BA4;&#x5F00;&#x542F;&#x7684;&#xFF0C;&#x540C;&#x6837;&#x5EFA;&#x8BAE;&#x624B;&#x52A8;&#x8BBE;&#x7F6E;&#x5176;&#x6587;&#x4EF6;&#x540D;&#x3002;
+6.&#x53EF;&#x4EE5;&#x5728;master&#x4E0A;&#x4E13;&#x95E8;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7528;&#x4E8E;&#x590D;&#x5236;&#x7684;&#x7528;&#x6237;&#xFF0C;&#x5B83;&#x53EA;&#x9700;&#x8981;&#x6709;&#x590D;&#x5236;&#x6743;&#x9650;replication slave&#x7528;&#x6765;&#x8BFB;&#x53D6;binlog&#x3002;
+7.&#x786E;&#x4FDD;slave&#x4E0A;&#x7684;&#x6570;&#x636E;&#x548C;master&#x4E0A;&#x7684;&#x6570;&#x636E;&#x5728;&quot;&#x590D;&#x5236;&#x7684;&#x8D77;&#x59CB;position&#x4E4B;&#x524D;&quot;&#x662F;&#x5B8C;&#x5168;&#x4E00;&#x81F4;&#x7684;&#x3002;&#x5982;&#x679C;master&#x548C;slave&#x4E0A;&#x6570;&#x636E;&#x4E0D;&#x4E00;&#x81F4;&#xFF0C;&#x590D;&#x5236;&#x4F1A;&#x5931;&#x8D25;&#x3002;
+8.&#x8BB0;&#x4E0B;master&#x5F00;&#x59CB;&#x590D;&#x5236;&#x524D;binlog&#x7684;position&#xFF0C;&#x56E0;&#x4E3A;&#x5728;slave&#x8FDE;&#x63A5;master&#x65F6;&#x9700;&#x8981;&#x6307;&#x5B9A;&#x4ECE;master&#x7684;&#x54EA;&#x4E2A;position&#x5F00;&#x59CB;&#x590D;&#x5236;&#x3002;
+9.&#x8003;&#x8651;&#x662F;&#x5426;&#x5C06;slave&#x8BBE;&#x7F6E;&#x4E3A;&#x53EA;&#x8BFB;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x5F00;&#x542F;read_only&#x9009;&#x9879;&#x3002;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x9664;&#x4E86;&#x5177;&#x6709;super&#x6743;&#x9650;(mysql 5.7.16&#x8FD8;&#x63D0;&#x4F9B;&#x4E86;super_read_only&#x7981;&#x6B62;super&#x7684;&#x5199;&#x64CD;&#x4F5C;)&#x548C;SQL&#x7EBF;&#x7A0B;&#x80FD;&#x5199;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x5176;&#x4ED6;&#x7528;&#x6237;&#x90FD;&#x4E0D;&#x80FD;&#x8FDB;&#x884C;&#x5199;&#x64CD;&#x4F5C;&#x3002;&#x8FD9;&#x79CD;&#x7981;&#x5199;&#x5BF9;&#x4E8E;slave&#x6765;&#x8BF4;&#xFF0C;&#x7EDD;&#x5927;&#x591A;&#x6570;&#x573A;&#x666F;&#x90FD;&#x975E;&#x5E38;&#x9002;&#x5408;&#x3002;
+*&#x5728;slave&#x4E0A;&#x6CA1;&#x6709;&#x5F00;&#x542F;read-only&#x9009;&#x9879;&#x65F6;&#xFF0C;&#x4EFB;&#x4F55;&#x6709;&#x5199;&#x6743;&#x9650;&#x7684;&#x7528;&#x6237;&#x90FD;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x5199;&#x64CD;&#x4F5C;&#xFF0C;&#x8FD9;&#x4E9B;&#x64CD;&#x4F5C;&#x90FD;&#x4F1A;&#x8BB0;&#x5F55;&#x5230;binlog&#x4E2D;&#x3002;&#x5982;&#x679C;slave&#x8981;&#x4F5C;&#x4E3A;&#x67D0;&#x4E9B;slave&#x7684;master&#xFF0C;&#x90A3;&#x4E48;&#x5728;slave2&#x4E0A;&#x5FC5;&#x987B;&#x8981;&#x5F00;&#x542F;log-slave-updates&#x548C;binlog&#x9009;&#x9879;&#x3002;</p>
+<h4 id="&#x8BBE;&#x7F6E;">&#x8BBE;&#x7F6E;</h4>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../DB2/db2.html" class="navigation navigation-prev " aria-label="Previous page: DB2">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../GaussDB/gaussdb.html" class="navigation navigation-next " aria-label="Next page: GaussDB">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Mysql","level":"3.11.2","depth":2,"next":{"title":"GaussDB","level":"3.11.3","depth":2,"path":"component/database/RDMS/GaussDB/gaussdb.md","ref":"component/database/RDMS/GaussDB/gaussdb.md","articles":[]},"previous":{"title":"DB2","level":"3.11.1","depth":2,"path":"component/database/RDMS/DB2/db2.md","ref":"component/database/RDMS/DB2/db2.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"component/database/RDMS/Mysql/mysql.md","mtime":"2020-06-29T10:23:35.352Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-29T10:28:06.637Z"},"basePath":"../../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../../gitbook/gitbook.js"></script>
+    <script src="../../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
